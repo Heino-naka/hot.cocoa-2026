@@ -451,7 +451,7 @@
       color: var(--text-light);
       text-align: center;
       margin-top: 12px;
-      white-space: nowrap; /* 意図しない改行を防ぐ */
+      white-space: nowrap;
     }
 
     /* ===== Voices Section ===== */
@@ -695,11 +695,6 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .thanks-cf-link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-    }
-
     .thanks-cta {
       display: inline-flex;
       align-items: center;
@@ -735,8 +730,8 @@
       object-fit: cover;
       display: block;
       opacity: 0.85;
-      /* 修正：下から2/5（75%付近）の位置に調整 */
-      object-position: center 75%;
+      /* 修正：前回（75%）より10%上に調整 */
+      object-position: center 65%;
     }
 
     /* ===== Footer ===== */
@@ -1035,6 +1030,28 @@
             <a href="https://www.instagram.com/joyo.morians/" target="_blank">Instagram</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Message</p>
+        <h2 class="section-title" style="color: var(--cream);">へいなかの<span style="color:var(--amber-light);">想い</span></h2>
+        <p class="body-text">
+          開催当日、へいなかが学生たちに向けて「森でほっとココア」への想いを語りました。当日の写真スライドショーとともにお届けします。
+        </p>
+        <div class="video-wrapper vertical">
+          <iframe 
+            src="https://www.youtube.com/embed/TJS1WAfDV-c" 
+            title="森でほっとココア vol.3 ─ へいなかの想い" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-caption">🎬 開催報告 ─ 約6分 ─ スライドショー＋へいなかのメッセージ</p>
       </div>
     </div>
   </section>
