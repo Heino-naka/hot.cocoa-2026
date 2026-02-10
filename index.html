@@ -185,22 +185,6 @@
       object-fit: cover;
     }
 
-    /* Placeholder style for images */
-    .image-placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, var(--cocoa-dark), var(--forest-deep));
-      color: rgba(253, 246, 236, 0.4);
-      font-family: var(--font-display);
-      font-size: 0.85rem;
-      text-align: center;
-      padding: 20px;
-      width: 100%;
-      height: 100%;
-      min-height: 200px;
-    }
-
     .hero-scroll {
       position: absolute;
       bottom: 32px;
@@ -453,21 +437,12 @@
       height: 100%;
     }
 
-    /* Vertical video (9:16) */
     .video-wrapper.vertical {
       padding-bottom: 0;
       width: 100%;
       max-width: 360px;
       aspect-ratio: 9/16;
       margin: 0 auto;
-    }
-
-    .video-wrapper.vertical iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
     }
 
     .video-caption {
@@ -478,17 +453,6 @@
       margin-top: 16px;
     }
 
-    /* Video in light bg */
-    .video-section.light {
-      background: var(--cream);
-    }
-    .video-section.light .section-label { color: var(--forest-light); }
-    .video-section.light .section-title { color: var(--cocoa-dark); }
-    .video-section.light .body-text { color: var(--text-secondary); }
-    .video-section.light .video-caption { color: var(--text-light); }
-    .video-section.light .video-wrapper { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); }
-
-    /* ===== Inline Photo Break ===== */
     /* ===== Voices Section ===== */
     .voices {
       padding: 80px 0;
@@ -711,10 +675,6 @@
       margin-bottom: 16px;
     }
 
-    .thanks .section-title {
-      margin-bottom: 16px;
-    }
-
     .thanks-message {
       font-size: 0.95rem;
       line-height: 2.2;
@@ -737,11 +697,6 @@
     .thanks-cf-link:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-    }
-
-    .thanks-cf-link img {
-      width: 100%;
-      height: auto;
     }
 
     .thanks-cta {
@@ -773,11 +728,6 @@
       padding: 0;
     }
 
-    .closing-photo-inner {
-      max-width: 100%;
-      margin: 0 auto;
-    }
-
     .closing-photo img {
       width: 100%;
       max-height: 80vh;
@@ -805,11 +755,6 @@
     .footer-links a {
       font-size: 0.78rem;
       color: rgba(253, 246, 236, 0.6);
-      transition: color 0.3s;
-    }
-
-    .footer-links a:hover {
-      color: var(--amber-light);
     }
 
     .footer-copy {
@@ -849,25 +794,6 @@
       font-size: 2rem;
       cursor: pointer;
       z-index: 10000;
-      line-height: 1;
-      font-family: var(--font-display);
-    }
-
-    .lightbox-close:hover {
-      color: #fff;
-    }
-
-    /* ===== Divider ===== */
-    .divider {
-      width: 40px;
-      height: 3px;
-      background: var(--amber);
-      border-radius: 2px;
-      margin: 0 auto 24px;
-    }
-
-    .divider.left {
-      margin: 0 0 24px 0;
     }
 
     /* ===== Responsive ===== */
@@ -876,26 +802,17 @@
       .hero { min-height: 100svh; padding: 48px 20px; }
       .gallery-grid { gap: 8px; }
       .event-info-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
-      .morians-body { padding: 20px; }
     }
 
     @media (min-width: 641px) {
-      .greeting-inner {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-      .greeting-text {
-        text-align: left;
-      }
-      .greeting-photo {
-        margin: 0;
-      }
+      .greeting-inner { flex-direction: row; align-items: flex-start; }
+      .greeting-text { text-align: left; }
+      .greeting-photo { margin: 0; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero-content">
       <p class="hero-vol">REPORT ─ 開催報告</p>
@@ -914,7 +831,6 @@
     <div class="hero-scroll"><span></span></div>
   </section>
 
-  <!-- ===== GREETING ===== -->
   <section class="greeting">
     <div class="container">
       <div class="greeting-inner fade-in">
@@ -936,7 +852,6 @@
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
   <section class="about">
     <div class="container">
       <div class="fade-in">
@@ -967,13 +882,11 @@
     </div>
   </section>
 
-  <!-- ===== EVENT INFO ===== -->
   <section class="event-info">
     <div class="container">
       <div class="event-info-grid fade-in">
         <div class="event-info-item">
           <p class="label">開催日</p>
-          <!-- ▼ vol.3の実際の開催日に差し替え ▼ -->
           <p class="value">2026年 1月</p>
         </div>
         <div class="event-info-item">
@@ -992,29 +905,21 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY: 当日の様子 ===== -->
   <section class="gallery">
     <div class="container">
       <div class="fade-in">
         <p class="section-label">Gallery</p>
         <h2 class="section-title">vol.3 <span class="accent">当日</span>のようす</h2>
         <p class="gallery-narrative">
-          当日は20人のこどもたちが来てくれました。（インフルエンザとかでちょっと少なかった）
+          当日は20人のこどもたちが来てくれました。薪集めリレーとじゃんけん大会でウォーミングアップしたら、お待ちかねの焼きマシュマロ＆ほっとココア。フリートークの時間には、こどもたちと大学生が自然と打ち解けていきました。
         </p>
         <p class="gallery-narrative">
-          薪集めリレーとじゃんけん大会でウォーミングアップしたら、お待ちかねの焼きマシュマロ＆ほっとココア。フリートークの時間には、こどもたちと大学生が自然と打ち解けていきました。恒例の空き缶ポトフを作りつつ、アコースティックバンド WOOD WORK のLIVEで森が音楽に包まれます。
-        </p>
-        <p class="gallery-narrative">
-          今年はみんなで花火も行いました。
-        </p>
-        <p class="gallery-narrative">
-          施設柄、こどもたちが火を扱う機会はほとんどない。こどもたち以上に先生方が喜んでいたのが印象的でした。最後の鬼ごっこはほんと、走りすぎて死ぬかと思いました…。
+          今年はみんなで花火も行いました。施設柄、こどもたちが火を扱う機会はほとんどない。こどもたち以上に先生方が喜んでいたのが印象的でした。
         </p>
       </div>
 
-      <!-- ダイジェスト動画：当日の様子 -->
       <div class="fade-in" style="margin-bottom: 40px;">
-        <div class="video-wrapper vertical" style="box-shadow: 0 8px 32px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.06);">
+        <div class="video-wrapper vertical">
           <iframe 
             src="https://www.youtube.com/embed/Kjv9Vp4iDkc" 
             title="森でほっとココア vol.3 ─ ダイジェスト" 
@@ -1023,10 +928,10 @@
             allowfullscreen>
           </iframe>
         </div>
-        <p class="video-caption" style="color: var(--text-light);">🎬 ダイジェスト ── 約6分 ── 当日の様子をぎゅっと凝縮</p>
+        <p class="video-caption">🎬 ダイジェスト ── 当日の様子をぎゅっと凝縮</p>
       </div>
 
-      <p class="gallery-narrative fade-in" style="margin-top: 2em;">カメラにピースしてくれる子が増えました。</p>
+      <p class="gallery-narrative fade-in" style="margin-top: 2em; text-align: center;">カメラにピースしてくれる子が増えました。</p>
 
       <div class="gallery-grid fade-in">
         <div class="gallery-item wide" onclick="openLightbox(this)">
@@ -1045,7 +950,7 @@
           <img src="images/20_cocoa.jpg" alt="たき火の前のほっとココアとマシュマロ">
         </div>
         <div class="gallery-item wide" onclick="openLightbox(this)">
-          <img src="images/40_freetalk6.jpg" alt="逆光の中、たき火を囲んでフリートーク" style="object-position: center bottom;">
+          <img src="images/40_freetalk6.jpg" alt="逆光の中、たき火を囲んでフリートーク" style="object-position: center;">
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
           <img src="images/70_music1.jpg" alt="WOOD WORKによる森のアコースティックライブ">
@@ -1058,16 +963,13 @@
     </div>
   </section>
 
-  <!-- ===== VOICES ===== -->
   <section class="voices">
     <div class="container">
       <div class="fade-in">
         <p class="section-label">Voices</p>
         <h2 class="section-title">参加者の<span class="accent">声</span></h2>
       </div>
-
       <div class="voice-cards fade-in">
-        <!-- ▼ 実際の参加者コメントに差し替え ▼ -->
         <div class="voice-card">
           <p class="voice-text">たき火の周りで話しているうちに、最初は緊張していた子が少しずつ笑うようになっていく。その変化を間近で見られたことが、自分にとっても大きな経験でした。</p>
           <p class="voice-author">── 参加大学生</p>
@@ -1084,103 +986,56 @@
     </div>
   </section>
 
-  <!-- ===== HISTORY ===== -->
   <section class="history">
     <div class="container">
       <div class="fade-in">
         <p class="section-label">History</p>
         <h2 class="section-title">これまでの<span style="color:var(--amber-light);">あゆみ</span></h2>
       </div>
-
       <div class="timeline fade-in">
         <div class="timeline-item">
           <p class="timeline-year">2022年11月</p>
           <h3 class="timeline-title">へいなか、MORIANSに加入</h3>
-          <p class="timeline-desc">町有林の管理を行うボランティア団体に最年少メンバーとして加入。平均年齢72歳のなかで、森の手入れを始める。</p>
+          <p class="timeline-desc">町有林の管理を行うボランティア団体に加入。森の手入れを始める。</p>
         </div>
-
         <div class="timeline-item">
           <p class="timeline-year">2024年1月</p>
           <h3 class="timeline-title">vol.1 はじまりの焚き火</h3>
-          <p class="timeline-desc">クラウドファンディングで101,000円（目標60,000円）の支援を受け、第1回を開催。38名の方から支援をいただいた。</p>
-          <div class="timeline-photo">
-            <img src="images/vol1_2024.jpg" alt="vol.1 こどもたちがおやつを楽しむ様子">
-          </div>
+          <p class="timeline-desc">クラウドファンディングで支援を受け、第1回を開催。</p>
+          <div class="timeline-photo"><img src="images/vol1_2024.jpg" alt="vol.1"></div>
         </div>
-
-        <div class="timeline-item">
-          <p class="timeline-year">2025年2月</p>
-          <h3 class="timeline-title">vol.2 つながりが広がる</h3>
-          <p class="timeline-desc">支援者は56名に増加。101,800円の支援を受け、2回目を無事開催。こどもたちにとっても「また行きたい」場所に。</p>
-          <div class="timeline-photo">
-            <img src="images/vol2_2025.jpg" alt="vol.2 森の中でギターとカホンの生演奏を楽しむこどもたち">
-          </div>
-        </div>
-
         <div class="timeline-item current">
-          <!-- ▼ vol.3の年月に差し替え ▼ -->
           <p class="timeline-year">2026年1月</p>
           <h3 class="timeline-title">vol.3 3年目のココア</h3>
-          <p class="timeline-desc">みなさまの支援のおかげで、3回目を開催。たき火を囲む輪はすこしずつ、でも確実に広がっています。</p>
-          <div class="timeline-photo">
-            <img src="images/88_allofmembers.jpg" alt="vol.3 参加者全員の集合写真">
-          </div>
+          <p class="timeline-desc">みなさまの支援のおかげで、3回目を開催。たき火を囲む輪が広がっています。</p>
+          <div class="timeline-photo"><img src="images/88_allofmembers.jpg" alt="vol.3 集合写真"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== MORIANS ===== -->
   <section class="morians">
     <div class="container">
       <div class="fade-in">
         <p class="section-label">Partner</p>
         <h2 class="section-title">協力団体</h2>
       </div>
-
       <div class="morians-card fade-in">
         <div class="morians-photo">
-          <img src="images/MORIANS.jpg" alt="MORIANSの活動する若宮の森">
+          <img src="images/MORIANS.jpg" alt="MORIANSの活動する森">
         </div>
         <div class="morians-body">
           <h3 class="morians-name">常陽森のボランティア MORIANS</h3>
-          <p class="morians-sub">茨城県東茨城郡茨城町若宮 ── 2009年発足</p>
-          <p class="morians-desc">
-            茨城県の森林ボランティア養成講座の修了生によって発足した団体です。茨城町若宮の森を整備し、除草・剪定・竹林管理などの森林再生活動のほか、地域のこどもたちへの自然体験の提供も行っています。月に2回、日曜日に活動中。自由参加でゆるやかに続いている、あたたかなコミュニティです。
-          </p>
+          <p class="morians-desc">茨城町若宮の森を整備し、森林再生活動やこどもたちへの自然体験の提供を行っています。</p>
           <div class="morians-links">
-            <a href="https://sites.google.com/view/joyo-morians/" target="_blank" rel="noopener">Webサイト</a>
-            <a href="https://www.instagram.com/joyo.morians/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://sites.google.com/view/joyo-morians/" target="_blank">Webサイト</a>
+            <a href="https://www.instagram.com/joyo.morians/" target="_blank">Instagram</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== REPORT VIDEO ===== -->
-  <section class="video-section">
-    <div class="container">
-      <div class="fade-in">
-        <p class="section-label">Message</p>
-        <h2 class="section-title" style="color: var(--cream);">へいなかの<span style="color:var(--amber-light);">想い</span></h2>
-        <p class="body-text">
-          開催当日、へいなかが学生たちに向けて「森でほっとココア」への想いを語りました。当日の写真スライドショーとともにお届けします。
-        </p>
-        <div class="video-wrapper vertical">
-          <iframe 
-            src="https://www.youtube.com/embed/TJS1WAfDV-c" 
-            title="森でほっとココア vol.3 ─ へいなかの想い" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        <p class="video-caption">🎬 開催報告 ── 約6分 ── スライドショー＋へいなかのメッセージ</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== THANKS ===== -->
   <section class="thanks">
     <div class="container">
       <div class="fade-in">
@@ -1188,82 +1043,56 @@
         <p class="section-label">Thank You</p>
         <h2 class="section-title">ご支援<span class="accent">ありがとう</span>ございました</h2>
         <div class="thanks-message">
-          <p>みなさまお一人おひとりの支援が、こどもたちのあたたかいココアになり、学生たちの学びの機会になり、森を守るMORIANSの活力になりました。</p>
-          <br>
-          <p>「森でほっとココア」は、来年もまた開催できるよう準備を進めていきます。このあたたかい輪が少しずつ広がっていくことを願っています。</p>
-          <br>
-          <p>これからも見守っていただけたら嬉しいです。</p>
+          <p>みなさまの支援が、こどもたちのココアになり、学生の学びになり、森を守る活力になりました。これからも見守っていただけたら嬉しいです。</p>
         </div>
-        <a href="https://for-good.net/project/1003058" target="_blank" rel="noopener" class="thanks-cf-link">
-          <img src="images/cloudfounding_top.png" alt="森でほっとココア vol.3 クラウドファンディングページ">
-        </a>
-        <a href="https://for-good.net/project/1003058" target="_blank" rel="noopener" class="thanks-cta">
-          クラファンページを見る →
-        </a>
+        <a href="https://for-good.net/project/1003058" target="_blank" class="thanks-cta">クラファンページを見る →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== CLOSING PHOTO ===== -->
   <section class="closing-photo">
     <div class="closing-photo-inner fade-in">
-      <img src="images/99_aftertalk.jpg" alt="みんなが帰ったあとの森。たき火の残り火と夕日">
+      <img src="images/99_aftertalk.jpg" alt="夕暮れの森">
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
-        <a href="https://for-good.net/project/1003058" target="_blank" rel="noopener">vol.3 クラファン</a>
-        <a href="https://x.com/Heino_naka" target="_blank" rel="noopener">X（へいなか）</a>
-        <a href="https://www.facebook.com/akira.abe.16/" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://sites.google.com/view/joyo-morians/" target="_blank" rel="noopener">MORIANS</a>
-        <a href="https://www.instagram.com/joyo.morians/" target="_blank" rel="noopener">MORIANS Instagram</a>
+        <a href="https://x.com/Heino_naka" target="_blank">X（へいなか）</a>
+        <a href="https://sites.google.com/view/joyo-morians/" target="_blank">MORIANS</a>
       </div>
       <p class="footer-copy">森でほっとココア vol.3 ─ 開催報告 ─ 2026</p>
     </div>
   </footer>
 
-  <!-- ===== LIGHTBOX ===== -->
   <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
-    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <span class="lightbox-close">×</span>
     <img id="lightbox-img" src="" alt="">
   </div>
 
   <script>
-    // ===== Fade-in on Scroll =====
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
+    }, { threshold: 0.15 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // ===== Lightbox =====
     function openLightbox(el) {
       const img = el.querySelector('img');
-      if (!img) return; // Skip if placeholder
       const overlay = document.getElementById('lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
       lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
       overlay.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
-
     function closeLightbox() {
       document.getElementById('lightbox').classList.remove('active');
       document.body.style.overflow = '';
     }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
   </script>
-
 </body>
 </html>
