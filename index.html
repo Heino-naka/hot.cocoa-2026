@@ -724,6 +724,26 @@
       text-align: left;
     }
 
+    .thanks-cf-link {
+      display: block;
+      max-width: 480px;
+      margin: 0 auto 24px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .thanks-cf-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .thanks-cf-link img {
+      width: 100%;
+      height: auto;
+    }
+
     .thanks-cta {
       display: inline-flex;
       align-items: center;
@@ -745,6 +765,25 @@
       color: var(--warm-white);
       transform: translateY(-2px);
       box-shadow: 0 4px 16px rgba(212, 133, 59, 0.3);
+    }
+
+    /* ===== Closing Photo ===== */
+    .closing-photo {
+      background: var(--cocoa-dark);
+      padding: 0;
+    }
+
+    .closing-photo-inner {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .closing-photo img {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: cover;
+      display: block;
+      opacity: 0.85;
     }
 
     /* ===== Footer ===== */
@@ -988,45 +1027,29 @@
       </div>
 
       <div class="gallery-grid fade-in">
-        <!-- ▼ ギャラリー画像①：会場の森の風景 ▼ -->
         <div class="gallery-item wide" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 森の風景・会場全体</div>
-          <!-- <img src="images/gallery-01.jpg" alt="会場の森の風景"> -->
+          <img src="images/00_bluesky.jpg" alt="冬の青空と若宮の森">
         </div>
-        <!-- ▼ ギャラリー画像②：たき火の準備 ▼ -->
         <div class="gallery-item" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 たき火の準備</div>
-          <!-- <img src="images/gallery-02.jpg" alt="たき火の準備をするスタッフ"> -->
+          <img src="images/02_prepsre4.jpg" alt="MORIANSメンバーによる準備風景">
         </div>
-        <!-- ▼ ギャラリー画像③：こどもたちの到着 ▼ -->
         <div class="gallery-item" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 こどもたちの到着</div>
-          <!-- <img src="images/gallery-03.jpg" alt="到着したこどもたち"> -->
+          <img src="images/11_bamboo2.jpg" alt="竹林で遊ぶこどもたち">
         </div>
-        <!-- ▼ ギャラリー画像④：たき火を囲む様子 ▼ -->
         <div class="gallery-item" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 たき火を囲む</div>
-          <!-- <img src="images/gallery-04.jpg" alt="たき火を囲むこどもたちと大学生"> -->
+          <img src="images/30_marshmallow1.jpg" alt="たき火でマシュマロを焼く">
         </div>
-        <!-- ▼ ギャラリー画像⑤：マシュマロを焼く ▼ -->
         <div class="gallery-item" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 マシュマロを焼く</div>
-          <!-- <img src="images/gallery-05.jpg" alt="マシュマロを焼くこどもたち"> -->
+          <img src="images/20_cocoa.jpg" alt="たき火の前のほっとココアとマシュマロ">
         </div>
-        <!-- ▼ ギャラリー画像⑥：ココアを飲む ▼ -->
         <div class="gallery-item wide" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 ココアを飲むみんな</div>
-          <!-- <img src="images/gallery-06.jpg" alt="ほっとココアを飲むみんなの様子"> -->
+          <img src="images/40_freetalk3.jpg" alt="逆光の中、たき火を囲んでフリートーク">
         </div>
-        <!-- ▼ ギャラリー画像⑦：大学生とこどもの交流 ▼ -->
         <div class="gallery-item" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 大学生との交流</div>
-          <!-- <img src="images/gallery-07.jpg" alt="大学生とこどもたちの交流の様子"> -->
+          <img src="images/70_music1.jpg" alt="WOOD WORKによる森のアコースティックライブ">
         </div>
-        <!-- ▼ ギャラリー画像⑧：MORIANSメンバー ▼ -->
         <div class="gallery-item" onclick="openLightbox(this)">
-          <div class="image-placeholder">📷 MORIANSメンバー</div>
-          <!-- <img src="images/gallery-08.jpg" alt="MORIANSメンバーの活動の様子"> -->
+          <img src="images/80_fireworks7.jpg" alt="たき火から花火に火をつけるこどもたち">
         </div>
       </div>
       <p class="gallery-caption">※ 写真をクリックすると拡大表示されます</p>
@@ -1079,7 +1102,7 @@
           <h3 class="timeline-title">vol.1 はじまりの焚き火</h3>
           <p class="timeline-desc">クラウドファンディングで101,000円（目標60,000円）の支援を受け、第1回を開催。38名の方から支援をいただいた。</p>
           <div class="timeline-photo">
-            <img src="images/vol_1.jpg" alt="vol.1 こどもたちがおやつを楽しむ様子">
+            <img src="images/vol1_2024.jpg" alt="vol.1 こどもたちがおやつを楽しむ様子">
           </div>
         </div>
 
@@ -1088,7 +1111,7 @@
           <h3 class="timeline-title">vol.2 つながりが広がる</h3>
           <p class="timeline-desc">支援者は56名に増加。101,800円の支援を受け、2回目を無事開催。こどもたちにとっても「また行きたい」場所に。</p>
           <div class="timeline-photo">
-            <img src="images/vol_2.jpg" alt="vol.2 森の中でギターとカホンの生演奏を楽しむこどもたち">
+            <img src="images/vol2_2025.jpg" alt="vol.2 森の中でギターとカホンの生演奏を楽しむこどもたち">
           </div>
         </div>
 
@@ -1169,10 +1192,20 @@
           <br>
           <p>これからも見守っていただけたら嬉しいです。</p>
         </div>
+        <a href="https://for-good.net/project/1003058" target="_blank" rel="noopener" class="thanks-cf-link">
+          <img src="images/cloudfounding_top.png" alt="森でほっとココア vol.3 クラウドファンディングページ">
+        </a>
         <a href="https://for-good.net/project/1003058" target="_blank" rel="noopener" class="thanks-cta">
           クラファンページを見る →
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING PHOTO ===== -->
+  <section class="closing-photo">
+    <div class="closing-photo-inner fade-in">
+      <img src="images/99_aftertalk.jpg" alt="みんなが帰ったあとの森。たき火の残り火と夕日">
     </div>
   </section>
 
