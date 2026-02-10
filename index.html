@@ -447,10 +447,11 @@
 
     .video-caption {
       font-family: var(--font-display);
-      font-size: 0.8rem;
-      color: rgba(253, 246, 236, 0.45);
+      font-size: 0.85rem;
+      color: var(--text-light);
       text-align: center;
-      margin-top: 16px;
+      margin-top: 12px;
+      white-space: nowrap; /* 意図しない改行を防ぐ */
     }
 
     /* ===== Voices Section ===== */
@@ -734,6 +735,8 @@
       object-fit: cover;
       display: block;
       opacity: 0.85;
+      /* 修正：下から2/5（75%付近）の位置に調整 */
+      object-position: center 75%;
     }
 
     /* ===== Footer ===== */
@@ -928,7 +931,7 @@
             allowfullscreen>
           </iframe>
         </div>
-        <p class="video-caption">🎬 ダイジェスト ── 当日の様子をぎゅっと凝縮</p>
+        <p class="video-caption">🎬 ダイジェスト ─ 約6分 ─ 当日の様子をぎゅっと凝縮</p>
       </div>
 
       <p class="gallery-narrative fade-in" style="margin-top: 2em; text-align: center;">カメラにピースしてくれる子が増えました。</p>
